@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "error_tests",
+  "info": {
+    "name": "Error Test",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "errorName": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 2,
+      "maxLength": 3
+    },
+    "howMany": {
+      "type": "integer",
+      "min": 1
+    }
+  }
+}

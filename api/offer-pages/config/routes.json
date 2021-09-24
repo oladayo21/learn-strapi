@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/offer-pages",
+      "handler": "offer-pages.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/offer-pages/count",
+      "handler": "offer-pages.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/offer-pages/:id",
+      "handler": "offer-pages.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/offer-pages",
+      "handler": "offer-pages.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/offer-pages/:id",
+      "handler": "offer-pages.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/offer-pages/:id",
+      "handler": "offer-pages.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

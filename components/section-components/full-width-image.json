@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_section_components_full_width_images",
+  "info": {
+    "name": "full-width-image",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "sectiontype": {
+      "type": "string",
+      "required": true,
+      "default": "FullImage"
+    },
+    "fullImage_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offer_pages",
+  "info": {
+    "name": "Offer Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "deploymentRunId": {
+      "type": "string",
+      "configurable": false
+    },
+    "deploymentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "undefined",
+        "running",
+        "failure",
+        "success"
+      ],
+      "default": "undefined",
+      "configurable": false
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^\\/[\\S]*$"
+    },
+    "ContentSections": {
+      "type": "dynamiczone",
+      "components": [
+        "section-components.header",
+        "section-components.full-width-image"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "seoSettings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.seo-component",
+      "required": true
+    },
+    "topArea": {
+      "type": "dynamiczone",
+      "components": [
+        "section-components.header"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_section_components_headers",
+  "info": {
+    "name": "header",
+    "icon": "align-center",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "subline": {
+      "type": "string"
+    },
+    "sectiontype": {
+      "type": "string",
+      "default": "Header",
+      "required": true
+    }
+  }
+}
