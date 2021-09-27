@@ -17,7 +17,7 @@ const primaryButtonObject = {
     fontWeight: 600,
   },
 };
-const createDraftButton = {
+const previewButtonObject = {
   color: "secondary",
   type: "button",
   style: {
@@ -37,6 +37,7 @@ const Header = ({
   modifiedData,
   onPublish,
   onUnpublish,
+  onPreview,
   status,
 }) => {
   const [showWarningUnpublish, setWarningUnpublish] = useState(false);
@@ -135,14 +136,14 @@ const Header = ({
         label: formatMessage({ id: labelID }),
         onClick,
       };
-      const createDraftAction = {
-        ...createDraftButton,
+      const previewAction = {
+        ...previewButtonObject,
         disabled: isCreatingEntry || didChangeData,
         isLoading,
-        label: "Create Draft",
-        onClick: () => alert("You realy want to create draft?"),
+        label: "Preview",
+        onClick: onPreview,
       };
-      headerActions.unshift(action, createDraftAction);
+      headerActions.unshift(action, previewAction);
     }
 
     return headerActions;

@@ -53,7 +53,7 @@ const EditView = ({
   const { allowedActions, isLoading: isLoadingForPermissions } =
     useUserPermissions(viewPermissions);
   const userPermissions = useUser();
-  console.log(allowedActions);
+
   // Here in case of a 403 response when fetching data we will either redirect to the previous page
   // Or to the homepage if there's no state in the history stack
   const from = get(state, "from", "/");
@@ -126,7 +126,7 @@ const EditView = ({
         onPost,
         onPublish,
         onPut,
-
+        onPreview,
         onUnpublish,
         status,
       }) => {
@@ -144,6 +144,7 @@ const EditView = ({
             isSingleType={isSingleType}
             onPost={onPost}
             onPublish={onPublish}
+            onPreview={onPreview}
             onPut={onPut}
             onUnpublish={onUnpublish}
             readActionAllowedFields={readActionAllowedFields}

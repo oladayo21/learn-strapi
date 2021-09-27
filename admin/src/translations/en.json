@@ -279,7 +279,7 @@
   "app.utils.errors.file-too-big.message": "The file is too big",
   "app.utils.filters": "Filters",
   "app.utils.placeholder.defaultMessage": " ",
-  "app.utils.publish": "Publish",
+  "app.utils.publish": "Publish/Deploy",
   "app.utils.select-all": "Select all",
   "app.utils.unpublish": "Unpublish",
   "component.Input.error.validation.integer": "The value must be an integer",
@@ -361,5 +361,5 @@
   "notification.version.update.message": "A new version of Strapi is available!",
   "notification.version.update.link": "See more",
   "request.error.model.unknown": "This model doesn't exist",
-  "custom.error":"You have {count} error(s) in your form"
+  "custom.error":"The form contains {count} error(s)"
 }
